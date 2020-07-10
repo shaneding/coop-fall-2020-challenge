@@ -58,15 +58,3 @@ class EventSourcer():
             print(operation[0], operation[1], connector, operation[2])
         
         print("Current/Final value is", self.value)
-
-
-sourcer = EventSourcer()
-sourcer.add(10)
-sourcer.subtract(5)
-sourcer.add(15)
-sourcer.add(5)
-sourcer.undo()
-sourcer.undo()
-sourcer.redo()
-sourcer.bulk_undo(5)
-sourcer.print_history()
